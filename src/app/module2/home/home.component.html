@@ -1,0 +1,20 @@
+<h1>Animation</h1>
+<h3>* Use angular-animations</h3>
+<div class="animate-container">
+  <button class="mg-b-10" mat-stroked-button color="primary" (click)="changefadeStatus()">Fade {{fadeStatus}}</button>
+  <div class="animate-item-1" [@simpleFadeAnimation]="fadeStatus">
+  </div>
+</div>
+<div class="mg-b-10"></div>
+<h3>* Use css</h3>
+<button class="mg-b-10" mat-stroked-button color="primary" (click)="changefadeStatusCss()">Fade {{fadeStatusCss}}</button>
+<div class="elementToFadeIn" [ngClass]="{'elementToFadeIn': fadeStatusCss == 'in', 'elementToFadeOut': fadeStatusCss == 'out'}"></div>
+<div class="mg-b-20"></div>
+
+<h1>Format Input</h1>
+
+<form class="example-form">
+  <mat-form-field class="full-width">
+    <input matInput placeholder="format number" maxlength="17" [value]="number" type="text" (keydown)="onKeydown($event)" (input)="inputChange($event)">
+  </mat-form-field>
+</form>

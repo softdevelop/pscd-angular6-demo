@@ -1,0 +1,48 @@
+.animate-item-1 {
+    background: red;
+    height: 200px;
+}
+.mg-b-10 {
+    margin-bottom: 10px;
+}
+.mg-b-20 {
+    margin-bottom: 20px;
+}
+
+.elementToFadeIn {
+    height: 200px;
+    background: green;
+    -webkit-animation: fadein 2s linear forwards;
+    animation: fadein 2s linear forwards;
+}
+
+.elementToFadeOut {
+    height: 200px;
+    background: green;
+    -webkit-animation: fadeout 2s linear forwards;
+    animation: fadeout 2s linear forwards;
+}
+
+@-webkit-keyframes fadein {
+  0% { opacity: 0; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadein {
+    0% { opacity: 0; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeout {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 0; }
+}
+
+@keyframes fadeout {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 0; }
+}

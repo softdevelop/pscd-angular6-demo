@@ -1,0 +1,5 @@
+<mat-list role="list" *ngFor="let i of numbers">
+  <mat-list-item role="listitem">Item {{i}}</mat-list-item>
+</mat-list>
+<button class="md-1" mat-stroked-button color="primary" (click)="_changeValue('i')">Increase</button>
+<button mat-stroked-button color="primary" (click)="_changeValue('d')">Decrease</button>
